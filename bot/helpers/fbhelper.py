@@ -21,6 +21,7 @@ def dlink_finder(url):
     op.headless = True
     driver_link = Service("/app/.chromedriver/bin/chromedriver")
     fb_link = url
+    print(url)
     result = ""
     driver = webdriver.Chrome(service=driver_link)
     driver.get("https://fdown.net/")
