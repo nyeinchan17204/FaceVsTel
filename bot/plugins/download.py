@@ -35,6 +35,7 @@ def _download(client, message):
       print("facebook Link")
       url = message.text
       try:
+        print(url)
         link = dlink_finder(url)
         print(link)
         filename = os.path.basename(link)
