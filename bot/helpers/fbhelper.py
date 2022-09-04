@@ -19,7 +19,7 @@ import wget
 def dlink_finder(url):
     op = webdriver.ChromeOptions()
     op.headless = True
-    driver_link = Service("C:/Users/Moe Nya/Documents/New_folder/chromedriver.exe")
+    driver_link = Service("/app/.chromedriver/bin/chromedriver")
     fb_link = url
     result = ""
     driver = webdriver.Chrome(service=driver_link)
