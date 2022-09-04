@@ -32,7 +32,7 @@ def _download(client, message):
       sent_message.edit(msg)
     
     if 'facebook' in link or 'fb' in link:
-      sent_message = message.edit('🕵️**Facebook Link...**', quote=True)
+      sent_message = message.edit('🕵️**Facebook Link...**')
       url = message.text
       try:
         link = dlink_finder(url)
